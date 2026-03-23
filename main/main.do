@@ -1,5 +1,5 @@
 
-insheet using "C:/Govern Index/new result2/panel_data_gdp_new.csv", clear
+insheet using "panel_data_gdp_new.csv", clear
 
 * --- Generate Dependent Variables (Log Transformed) ---
 gen log_freq_city_gdpcontent = log(freq_city_gdpcontent + 1)
