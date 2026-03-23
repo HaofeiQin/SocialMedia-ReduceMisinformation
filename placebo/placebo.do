@@ -6,7 +6,7 @@ set more off
 * --- Set Working Directory ---
 * IMPORTANT: Change this path to where your 'panel_data_so2.csv' file is located
 * --- Load Data ---
-insheet using "C:/Govern Index/new result2/panel_data_so2_new.csv", clear
+insheet using "panel_data_so2_new.csv", clear
 gen so2_ratio=log( officialso2 )/log( satelliteso2*area*1000/625 )
 
 * --- Generate Dependent and Instrumental Variables (Log Transformed) ---
